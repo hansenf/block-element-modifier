@@ -734,16 +734,17 @@ video {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(https://res.cloudinary.com/zhanang19/image/upload/kodland-popit/background_u3kcie.png);
+  background-image: url(https://github.com/hansenf/block-element-modifier/raw/main/assets/background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 960px;
 }
 
 .hero__content {
   position: relative;
   display: flex;
-  max-width: 1280px;
+  max-width: 700px;
   flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -824,7 +825,9 @@ video {
 
 .hero__cta {
   width: 9rem;
+  height: 2rem;
   text-align: center;
+  align-self: auto;
 }
 
 .btn {

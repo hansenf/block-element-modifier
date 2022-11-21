@@ -1,51 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>BEM-Hansen Feriandy</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP IT!</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <!-- Header Navigation -->
-    <main>
-        HE_PUPYRYKA.ru
-        <nav>
-            <ul>
-                <li>
-                    About HAC
-                </li>
-                <li>
-                    Diskon
-                </li>
-                <li>
-                    Kontak
-                </li>
-            </ul>
+<body class="font-sans">
+  <header class="header">
+    <div class="flex h-16 items-center justify-between">
+      <div class="headerHome">
+        <a class="headerHome__link" href="#">HE_PUPYRYKA.ru</a>
+      </div>
+
+      <div class="header__nav">
+        <nav class="header__nav__wrapper">
+          <ul class="header__nav__list">
+            <li>
+              <a class="header__nav__link" href="#"> About Us</a>
+            </li>
+            <li>
+              <a class="header__nav__link" href="#"> Discounts </a>
+            </li>
+            <li>
+              <a class="header__nav__link" href="#"> Contacts </a>
+            </li>
+          </ul>
         </nav>
-    </main>
-    <!-- Section 1 - Promotional -->
-    <main>
-        <h1>POP IT!</h1>
-        <p>lorem ipsum</p>
-        <input type="submit" />
-        <img src="images/background.png">    
-    </main> 
-    <!-- Section 2 - What's Pop It ? -->
-    <main>
-        <h1>POP IT!</h1>
-        <p>lorem ipsum</p>
-        <img src="images/background.png">    
-    </main>
-    <!-- Section 3 - Products -->
-    <main>
-        <h1>POP IT!</h1>
-        <p>lorem ipsum</p>
-        <img src="images/background.png">    
-    </main>
-    <!-- Section 4 - Illustration -->
-    <main>
-        <h1>POP IT!</h1>
-        <p>lorem ipsum</p>
-        <img src="images/bg-grid.png">    
-    </main>
-    <!-- Footer -->
-    This is Footer
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <h1 class="hero__heading">POP IT!</h1>
+        <p class="hero__description">The best anti-stress toy is an endless bubble wrap!</p>
+        <a href="#" class="hero__cta btn btn--secondary">BUY</a>
+      </div>
+    </section>
+    <section id="about" class="section section--center section--xl-width section--white">
+      <h2 class="section__heading">What is Pop It?</h2>
+      <p class="section__description section__description--center">Pop It is the newest fidget toy available, similar to the colorful, handheld and pocket-sized fidget spinners known as tri-spinners or hand spinners usually made of plastic or metal. Most have a ball bearing in the middle, which helps spin the toy’s outside weight.</p>
+    </section>
+    <section id="options" class="section section--center section--blue">
+      <h2 class="section__heading">Choose your Pop It!</h2>
+      <div class="section__product__grid">
+        <div class="section__product__card">
+          <img src="https://github.com/hansenf/block-element-modifier/raw/main/assets/square.png" class="section__product__image" />
+          <h2 class="section__product__name">Multi-Colored Square</h2>
+          <a href="#" class="btn btn--primary">BUY</a>
+        </div>
+
+        <div class="section__product__card">
+          <img src="https://github.com/hansenf/block-element-modifier/raw/main/assets/amongus.png" class="section__product__image" />
+          <h2 class="section__product__name">Among us, Marble</h2>
+          <a href="#" class="btn btn--primary">BUY</a>
+        </div>
+
+        <div class="section__product__card">
+          <img src="https://github.com/hansenf/block-element-modifier/raw/main/assets/round.png" class="section__product__image" />
+          <h2 class="section__product__name">Multi-Colored Round</h2>
+          <a href="#" class="btn btn--primary">BUY</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="relative flex items-center justify-between gap-12 overflow-hidden px-8">
+        <img class="absolute top-[50%] left-[50%] w-[800px] translate-x-[-50%] translate-y-[-50%]" src="https://github.com/hansenf/block-element-modifier/raw/main/assets/bg-grid.png" />
+        <div class="z-10 w-[60%]">
+          <h2 class="section__heading section__heading--left">Rules of the game</h2>
+          <p class="description">Players take turns and click on the pimples. It is necessary to finish the row you started! You can click on a maximum of 5 pimples at the same time (necessarily must be nearby, you can not press immediately a few pimples, if they are not back to back) The task is to make sure that the opponent went last, whoever went last lost!</p>
+        </div>
+        <div class="z-10 h-[280px]">
+          <img class="h-full w-full object-cover" src="https://github.com/hansenf/block-element-modifier/raw/main/assets/photo.jpg" alt="illustration of pop it rules" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-8">
+      <div class="footer__item">Pop-It.py</div>
+      <div class="footer__item">
+        <a href="#">Payment Methods</a>
+        <a href="#">Discounts</a>
+        <a href="#">Contacts</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
